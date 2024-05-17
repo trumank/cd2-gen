@@ -1,10 +1,10 @@
+import { ModuleBase } from "./base.ts";
 import {
   ValueBoolean,
   ValueList,
   ValueNumber,
   ValueString,
 } from "../values/mod.ts";
-import { ModuleBase } from "./base.ts";
 
 export type Enemies = ModuleBase & EnemyDescriptorList;
 

@@ -1,5 +1,5 @@
-import { ValueBoolean, ValueNumber } from "../values/mod.ts";
 import { ModuleBase } from "./base.ts";
+import { ValueBoolean, ValueNumber } from "../values/mod.ts";
 
 export interface Darkness extends ModuleBase {
   FlashlightStrength?: ValueNumber;

@@ -1,5 +1,5 @@
-import { ValueNumber } from "../values/mod.ts";
 import { ModuleBase } from "./base.ts";
+import { ValueNumber } from "../values/mod.ts";
 
 export interface Bin {
   weight: ValueNumber;

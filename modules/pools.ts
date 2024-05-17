@@ -1,5 +1,5 @@
-import { ValueList, ValueNumber } from "../values/mod.ts";
 import { ModuleBase } from "./base.ts";
+import { ValueList, ValueNumber } from "../values/mod.ts";
 
 export interface Pool extends ModuleBase {
   Clear?: boolean;

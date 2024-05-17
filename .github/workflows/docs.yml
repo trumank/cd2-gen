@@ -21,6 +21,9 @@ jobs:
       - name: Generate Deno Docs
         run: deno doc --html --name="CD2" ./mod.ts
 
+      - name: Patch search url
+        run: sed -i 's/length + 1/length/g' ./docs/search.js
+
       - name: Deploy to GitHub Pages
         uses: actions/configure-pages@v5
 

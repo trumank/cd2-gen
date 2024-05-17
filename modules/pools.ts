@@ -1,4 +1,4 @@
-import { ValueList, ValueNumber } from "../main.ts";
+import { ValueList, ValueNumber } from "../values/mod.ts";
 import { ModuleBase } from "./base.ts";
 
 export interface Pool extends ModuleBase {

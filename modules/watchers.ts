@@ -1,4 +1,4 @@
-import { ValueBoolean, ValueNumber } from "../main.ts";
+import { ValueBoolean, ValueNumber } from "../values/mod.ts";
 
 export interface Watchers {
   Values: {

@@ -1,4 +1,4 @@
-import { ValueBoolean } from "../main.ts";
+import { ValueBoolean } from "../values/mod.ts";
 
 export interface ModuleBase {
   Enabled?: ValueBoolean;

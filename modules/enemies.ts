@@ -1,11 +1,18 @@
-import { ValueBoolean, ValueList, ValueNumber, ValueString } from "../main.ts";
+import {
+  ValueBoolean,
+  ValueList,
+  ValueNumber,
+  ValueString,
+} from "../values/mod.ts";
 import { ModuleBase } from "./base.ts";
 
-export type Enemies = ModuleBase & {
-  [key: string]: EnemyDescriptor;
-};
+export type Enemies = ModuleBase & EnemyDescriptorList;
 
-interface EnemyDescriptor {
+export interface EnemyDescriptorList {
+  [key: string]: EnemyDescriptor;
+}
+
+export interface EnemyDescriptor {
   Base?: string;
   DifficultyRating?: ValueNumber;
   UsesSpawnRarityModifiers?: ValueBoolean;
@@ -14,6 +21,7 @@ interface EnemyDescriptor {
     Duration: ValueNumber;
   };
   MaxSpawnCount?: ValueNumber;
+  IdealSpawnSize?: ValueNumber;
   DisplayName?: ValueString;
   Rarity?: ValueNumber;
   SpawnSpread?: ValueNumber;

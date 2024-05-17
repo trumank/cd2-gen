@@ -1,4 +1,4 @@
-import { ValueNumber } from "../main.ts";
+import { ValueNumber } from "../values/mod.ts";
 import { ModuleBase } from "./base.ts";
 
 export interface Caps extends ModuleBase {

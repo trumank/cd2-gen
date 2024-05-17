@@ -210,7 +210,7 @@ export interface MutateDivide {
 }
 
 export interface MutatePow {
-  Mutate: "Divide";
+  Mutate: "Pow";
   A: ValueNumber;
   B: ValueNumber;
 }

@@ -1,28 +1,28 @@
 import {
-  Caps,
-  Darkness,
-  DifficultySetting,
-  Enemies,
-  EscortMule,
-  Mule,
-  Pools,
-  Resupply,
-  Watchers,
-  WaveSpawners,
+  ModuleCaps,
+  ModuleDarkness,
+  ModuleDifficultySetting,
+  ModuleEnemies,
+  ModuleEscortMule,
+  ModuleMule,
+  ModulePools,
+  ModuleResupply,
+  ModuleWatchers,
+  ModuleWaveSpawners,
 } from "./modules/mod.ts";
 
 export interface Difficulty {
   Name: string;
   Description?: string;
-  Pools?: Pools;
-  DifficultySetting?: DifficultySetting;
-  Enemies?: Enemies;
-  EnemiesNoSync?: Enemies;
-  WaveSpawners?: WaveSpawners;
-  Caps?: Caps;
-  Resupply?: Resupply;
-  EscortMule?: EscortMule;
-  Watchers?: Watchers;
-  Mule?: Mule;
-  Darkness?: Darkness;
+  Pools?: ModulePools;
+  DifficultySetting?: ModuleDifficultySetting;
+  Enemies?: ModuleEnemies;
+  EnemiesNoSync?: ModuleEnemies;
+  WaveSpawners?: ModuleWaveSpawners;
+  Caps?: ModuleCaps;
+  Resupply?: ModuleResupply;
+  EscortMule?: ModuleEscortMule;
+  Watchers?: ModuleWatchers;
+  Mule?: ModuleMule;
+  Darkness?: ModuleDarkness;
 }

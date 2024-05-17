@@ -1,7 +1,7 @@
 import { ModuleBase } from "./base.ts";
 import { ValueBoolean, ValueNumber } from "../values/mod.ts";
 
-export interface Darkness extends ModuleBase {
+export interface ModuleDarkness extends ModuleBase {
   FlashlightStrength?: ValueNumber;
   PlayerIllumination?: ValueNumber;
   FlareProductionTime?: ValueNumber;

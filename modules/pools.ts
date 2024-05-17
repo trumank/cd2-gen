@@ -1,7 +1,7 @@
 import { ModuleBase } from "./base.ts";
 import { ValueList, ValueNumber } from "../values/mod.ts";
 
-export interface Pool extends ModuleBase {
+export interface Pool {
   Clear?: boolean;
   Add?: ValueList;
   Remove?: ValueList;
@@ -12,7 +12,7 @@ export interface Range {
   Max: ValueNumber;
 }
 
-export interface Pools {
+export interface ModulePools extends ModuleBase {
   MinPoolSize?: ValueNumber;
   DisruptiveEnemyPoolCount?: Range;
   StationaryEnemyCount?: Range;

@@ -15,7 +15,7 @@ type DifficultyFullName =
   | "Hazard 5";
 type DifficultyShort = "1" | "2" | "3" | "4" | "5";
 
-export interface DifficultySetting extends ModuleBase {
+export interface ModuleDifficultySetting extends ModuleBase {
   BaseHazard?: DifficultyFullName | DifficultyShort;
   SpeedModifier?: ValueNumber;
   ExtraLargeEnemyDamageResistance?: ValueNumber | ValueNumber[];

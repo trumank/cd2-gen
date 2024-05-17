@@ -9,4 +9,4 @@ export interface Wave extends ModuleBase {
   Enemies?: ValueList;
 }
 
-export type WaveSpawners = Wave[];
+export type ModuleWaveSpawners = Wave[];
